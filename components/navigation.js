@@ -2,8 +2,6 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import NavigationLinks from './navigation-links'
-
 const Navigation = (props) => {
   return (
     <>
@@ -18,7 +16,6 @@ const Navigation = (props) => {
             className="navigation-image"
           />
           <div className="navigation-nav">
-            <NavigationLinks rootClassName="navigation-links-root-class-name17"></NavigationLinks>
             <button className="navigation-register button-primary button button-md">
               {props.button}
             </button>
@@ -41,7 +38,6 @@ const Navigation = (props) => {
                   </svg>
                 </div>
               </div>
-              <NavigationLinks rootClassName="navigation-links-root-class-name18"></NavigationLinks>
               <button className="navigation-register1 button-primary button button-md">
                 {props.button1}
               </button>

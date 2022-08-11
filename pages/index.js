@@ -2,11 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import Navigation from '../components/navigation'
-import SpeakerCard from '../components/speaker-card'
-import NumbersCard from '../components/numbers-card'
-import EventCard from '../components/event-card'
-import Slide from '../components/slide'
-import Footer from '../components/footer'
+import TestimonialCard1 from '../components/testimonial-card1'
 
 const Home = (props) => {
   return (
@@ -32,16 +28,16 @@ const Home = (props) => {
           image_src1="/playground_assets/logosnew-21.svg"
           rootClassName="navigation-root-class-name"
         ></Navigation>
-        <main className="home-main">
-          <div className="home-hero section-container">
-            <div className="home-max-width max-content-container">
-              <div className="home-content-container">
-                <span className="home-text">
-                  <span>¿Tenes un negocio?</span>
-                </span>
-                <span className="home-text02">
-                  Acepta pagos en criptomonedas.
-                </span>
+        <div className="home-hero section-container hero-container">
+          <div className="home-max-width max-width">
+            <div className="home-content-container">
+              <span className="home-text">
+                <span>¿Tenes un negocio?</span>
+              </span>
+              <span className="home-text02">
+                Acepta pagos en criptomonedas.
+              </span>
+              <div className="home-container1">
                 <img
                   alt="image"
                   src="/playground_assets/asset%201.svg"
@@ -53,7 +49,7 @@ const Home = (props) => {
                     placeholder="Tu correo electronico"
                     className="home-textinput input"
                   />
-                  <div className="home-container1">
+                  <div className="home-container2">
                     <a
                       href="https://talo.com.ar/newsletter"
                       target="_blank"
@@ -72,313 +68,157 @@ const Home = (props) => {
                 </div>
               </div>
             </div>
-            <div className="home-blue-background"></div>
-          </div>
-          <div className="home-speakers section-container">
-            <div className="home-max-width1 max-content-container">
-              <div className="home-heading-container">
-                <span className="home-text06">
-                  16 speakers from 7 countries and 3 continents
-                </span>
-                <h1 className="home-text07 heading2">
-                  <span>meet our speakers</span>
-                  <span className="home-text09"></span>
-                </h1>
-              </div>
-              <div className="home-speakers-container">
-                <SpeakerCard></SpeakerCard>
-                <SpeakerCard
-                  role="digital marketing associate @ WPP"
-                  lastName="Simpson"
-                  firstName="Mellisa"
-                  image_src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHBlb3BsZXxlbnwwfHx8fDE2NDM3MDU1MTE&amp;ixlib=rb-1.2.1&amp;h=300"
-                ></SpeakerCard>
-                <SpeakerCard
-                  role="VP OF Marketing @ BUZZFEED"
-                  lastName="tevlenko"
-                  firstName="alina"
-                  image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDZ8fHBlb3BsZXxlbnwwfHx8fDE2NDM3MDU1MTE&amp;ixlib=rb-1.2.1&amp;h=300"
-                ></SpeakerCard>
-                <SpeakerCard
-                  role="HEAD OF DIGITAL @ HUBSPOT"
-                  lastName="iprovich"
-                  firstName="gregor"
-                  image_src="https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI5fHxwZW9wbGV8ZW58MHx8fHwxNjQzNzA1NTEx&amp;ixlib=rb-1.2.1&amp;h=300"
-                ></SpeakerCard>
-                <SpeakerCard
-                  role="marketing officer @ salesforce"
-                  lastName="daris"
-                  firstName="damian"
-                  image_src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHxwZW9wbGV8ZW58MHx8fHwxNjQzNzA1NTEx&amp;ixlib=rb-1.2.1&amp;h=300"
-                ></SpeakerCard>
-                <SpeakerCard
-                  role="social media manager @ vodafone"
-                  lastName="warren"
-                  firstName="matt"
-                  image_src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0N3x8cGVvcGxlfGVufDB8fHx8MTY0MzcwODY5MQ&amp;ixlib=rb-1.2.1&amp;h=300"
-                ></SpeakerCard>
-                <SpeakerCard
-                  role="creative director @ BBDO"
-                  lastName="moore"
-                  firstName="kathie"
-                  image_src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE2OHx8cGVvcGxlfGVufDB8fHx8MTY0MzcwODY5MQ&amp;ixlib=rb-1.2.1&amp;h=300"
-                ></SpeakerCard>
-                <SpeakerCard
-                  role="CMO @ youtube Europe"
-                  lastName="chan"
-                  firstName="erick"
-                  image_src="https://images.unsplash.com/photo-1558222218-b7b54eede3f3?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwNHx8cGVvcGxlfGVufDB8fHx8MTY0MzcwODY4MQ&amp;ixlib=rb-1.2.1&amp;h=300"
-                ></SpeakerCard>
-              </div>
-            </div>
-          </div>
-          <div className="home-numbers-banner section-container">
-            <div className="home-container2 max-content-container">
-              <div className="home-heading-container1">
-                <span className="home-text10">
-                  Our 12-year conference history in sharing digital marketing
-                  insights
-                </span>
-                <h1 className="home-text11 heading2">
-                  <span>market1 SUMMIT IN NUMBERS</span>
-                </h1>
-              </div>
-              <div className="home-numbers-container">
-                <NumbersCard></NumbersCard>
-                <NumbersCard
-                  text="years"
-                  number="12"
-                  image_src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
-                ></NumbersCard>
-                <NumbersCard
-                  text="total events"
-                  number="64"
-                  image_src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
-                ></NumbersCard>
-                <NumbersCard
-                  text="companies"
-                  number="15,070"
-                  image_src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
-                ></NumbersCard>
-                <NumbersCard
-                  text="cities"
-                  number="14"
-                  image_src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
-                ></NumbersCard>
-                <NumbersCard
-                  text="speakers"
-                  number="1,071"
-                  image_src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
-                ></NumbersCard>
-              </div>
-            </div>
-          </div>
-          <div className="home-location">
             <img
               alt="image"
-              src="https://images.unsplash.com/photo-1564347288827-3e4293543e07?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE2fHxiZXJsaW58ZW58MHx8fHwxNjQzNzEzNjQ5&amp;ixlib=rb-1.2.1&amp;w=1500"
+              src="/playground_assets/wallpaper.svg"
               className="home-image1"
             />
-            <div className="home-content-container1 section-container">
-              <div className="home-container3">
-                <span className="home-text13">berlin, germany</span>
-                <span className="home-text14">7-8 MARCH 2023</span>
-                <div className="home-container4">
-                  <span className="home-text15">
-                    <span>— mob-x</span>
+            <div className="home-blue-background"></div>
+          </div>
+        </div>
+        <div className="home-section section-container">
+          <div className="home-max-width1 max-width">
+            <div className="home-testimonial">
+              <div className="home-team">
+                <h1 className="home-text06">
+                  <span>Quienes somos</span>
+                  <br></br>
+                </h1>
+                <span className="home-text09">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    non volutpat turpis. Mauris luctus rutrum mi ut rhoncus.
+                    Integer in dignissim tortor.
                   </span>
-                  <span className="home-text17">
-                    <span>conference</span>
-                  </span>
-                  <span className="home-text19">
-                    <span>center</span>
-                  </span>
+                </span>
+                <div className="home-container3">
+                  <TestimonialCard1
+                    name="Camila Borinsky"
+                    role="CTO"
+                    picture_src="https://images.unsplash.com/photo-1557053910-d9eadeed1c58?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHdvbWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNjI2NDUxOTgy&amp;ixlib=rb-1.2.1&amp;h=1200"
+                    rootClassName="rootClassName2"
+                  ></TestimonialCard1>
+                  <TestimonialCard1
+                    name="Bautista Travella"
+                    role="CMO"
+                    quote="Estudiante de diseño industrial en la universidad de palermo, con experiencia como diseñador de ui/ux"
+                    rootClassName="rootClassName"
+                  ></TestimonialCard1>
+                  <TestimonialCard1
+                    name="AGUSTIN Tormakh"
+                    role="CEO"
+                    picture_src="/playground_assets/agus_profile.png"
+                    rootClassName="rootClassName1"
+                  ></TestimonialCard1>
                 </div>
-                <div className="home-container5">
-                  <span className="home-text21">beautiful, vibrant berlin</span>
-                  <span className="home-text22">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="home-section1 section-container">
+          <div className="home-max-width2 max-width">
+            <div className="home-f-a-q">
+              <div className="home-questions">
+                <span className="home-text11">FAQ</span>
+                <h1 className="home-text12">Preguntas frecuentes</h1>
+                <div data-role="Accordion" className="home-question question">
+                  <div data-type="accordion-header" className="home-trigger">
+                    <span>¿Qué es Talo?</span>
+                    <svg viewBox="0 0 1024 1024" className="home-icon02">
+                      <path d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+                    </svg>
+                  </div>
+                  <div
+                    data-type="accordion-content"
+                    className="question-content"
+                  >
+                    <span className="home-text14">Text</span>
+                  </div>
+                </div>
+                <div className="home-question1 question">
+                  <div data-type="accordion-header" className="home-trigger1">
+                    <span>¿Cómo integrar Talo a mi comercio?</span>
+                    <svg viewBox="0 0 1024 1024" className="home-icon04">
+                      <path d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+                    </svg>
+                  </div>
+                  <div className="question-content">
+                    <span className="home-text16">Text</span>
+                  </div>
+                </div>
+                <div className="home-question2 question">
+                  <div data-type="accordion-header" className="home-trigger2">
+                    <span>¿Qué información necesito para cobrar en Talo?</span>
+                    <svg viewBox="0 0 1024 1024" className="home-icon06">
+                      <path d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+                    </svg>
+                  </div>
+                  <div className="question-content">
+                    <span className="home-text18">Text</span>
+                  </div>
+                </div>
+                <div className="home-question3 question">
+                  <div data-type="accordion-header" className="home-trigger3">
+                    <span>¿Que monedas digitales se pueden recibir?</span>
+                    <svg viewBox="0 0 1024 1024" className="home-icon08">
+                      <path d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+                    </svg>
+                  </div>
+                  <div className="question-content">
+                    <span className="home-text20">Text</span>
+                  </div>
+                </div>
+                <div className="home-question4 question">
+                  <div data-type="accordion-header" className="home-trigger4">
+                    <span>¿Como sacar mis fondos de Talo?</span>
+                    <svg viewBox="0 0 1024 1024" className="home-icon10">
+                      <path d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+                    </svg>
+                  </div>
+                  <div className="question-content">
+                    <span className="home-text22">Text</span>
+                  </div>
+                </div>
+                <div className="home-question5 question">
+                  <div data-type="accordion-header" className="home-trigger5">
                     <span>
-                      Amet minim mollit non deserunt ullamco est sit aliqua
-                      dolor do amet sint. Velit officia consequat duis enim
-                      velit mollit. Exercitation veniam consequat sunt nostrud
-                      amet.
+                      ¿Necesito estar bancarizado para tener una cuenta en talo
+                      ?
                     </span>
-                    <br></br>
-                    <span></span>
-                    <br></br>
-                    <span>
-                      Lorem Ipsum, Velit officia consequat duis enim velit
-                      mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </span>
-                  </span>
-                  <div className="home-btns-container1">
-                    <button className="button-secondary button button-md">
-                      register
-                    </button>
-                    <button className="home-learn-more button button-outline button-md-border">
-                      learn more
-                    </button>
+                    <svg viewBox="0 0 1024 1024" className="home-icon12">
+                      <path d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+                    </svg>
+                  </div>
+                  <div className="question-content">
+                    <span className="home-text24">Text</span>
                   </div>
                 </div>
               </div>
+              <img
+                alt="image"
+                src="/playground_assets/asset%2021.svg"
+                className="home-image2"
+              />
             </div>
           </div>
-          <div className="home-agenda section-container">
-            <div className="home-max-width2 max-content-container">
-              <div className="home-heading-container2">
-                <h1 className="home-text26 heading2">
-                  <span>key events agenda</span>
-                </h1>
-                <span className="home-text28">
-                  more announcements are coming soon
-                </span>
-              </div>
-              <div className="home-events-container">
-                <div className="home-column">
-                  <div className="home-column-header">
-                    <span className="home-text29">
-                      <span>tuesday - 7.03</span>
-                    </span>
-                    <div className="home-line"></div>
-                  </div>
-                  <EventCard></EventCard>
-                  <EventCard
-                    title="tik tok or what?"
-                    image_src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHBlb3BsZXxlbnwwfHx8fDE2NDM3MDU1MTE&amp;ixlib=rb-1.2.1&amp;h=300"
-                  ></EventCard>
-                  <EventCard
-                    title="sales + marketing duo"
-                    image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDZ8fHBlb3BsZXxlbnwwfHx8fDE2NDM3MDU1MTE&amp;ixlib=rb-1.2.1&amp;h=300"
-                  ></EventCard>
-                  <EventCard
-                    title="best practices for more\ndata-driven results"
-                    image_src="https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI5fHxwZW9wbGV8ZW58MHx8fHwxNjQzNzA1NTEx&amp;ixlib=rb-1.2.1&amp;h=300"
-                  ></EventCard>
-                </div>
-                <div className="home-column1">
-                  <div className="home-column-header1">
-                    <span className="home-text31">
-                      <span>wednesday - 8.03</span>
-                    </span>
-                    <div className="home-line1"></div>
-                  </div>
-                  <EventCard
-                    title="digital marketing strategies"
-                    image_src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHxwZW9wbGV8ZW58MHx8fHwxNjQzNzA1NTEx&amp;ixlib=rb-1.2.1&amp;h=300"
-                  ></EventCard>
-                  <EventCard
-                    title="a new era of social media"
-                    image_src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0N3x8cGVvcGxlfGVufDB8fHx8MTY0MzcwODY5MQ&amp;ixlib=rb-1.2.1&amp;h=300"
-                  ></EventCard>
-                  <EventCard
-                    title="growing a remote team"
-                    image_src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE2OHx8cGVvcGxlfGVufDB8fHx8MTY0MzcwODY5MQ&amp;ixlib=rb-1.2.1&amp;h=300"
-                  ></EventCard>
-                  <EventCard
-                    title="beyond the metaverse"
-                    image_src="https://images.unsplash.com/photo-1558222218-b7b54eede3f3?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwNHx8cGVvcGxlfGVufDB8fHx8MTY0MzcwODY4MQ&amp;ixlib=rb-1.2.1&amp;h=300"
-                  ></EventCard>
-                </div>
-              </div>
-            </div>
+        </div>
+        <footer className="home-footer">
+          <img
+            alt="logo"
+            src="/playground_assets/logosnew-21.svg"
+            className="home-image3"
+          />
+          <span className="home-text25">© 2021 talo, derechos reservados.</span>
+          <div className="home-icon-group">
+            <svg viewBox="0 0 950.8571428571428 1024" className="home-icon14">
+              <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
+            </svg>
+            <svg viewBox="0 0 877.7142857142857 1024" className="home-icon16">
+              <path d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"></path>
+            </svg>
           </div>
-          <div className="home-workshops">
-            <div className="home-content-container2">
-              <div className="home-container6">
-                <h1 className="home-text33 heading2">
-                  <span>
-                    register for
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <br></br>
-                  <span className="home-text36">super insightful</span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <br></br>
-                  <span>
-                    workshops for
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <br></br>
-                  <span>your team</span>
-                </h1>
-                <span className="home-text42">
-                  get early discounts and group discounts
-                </span>
-                <span className="home-text43">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
-                </span>
-                <button className="button button-md button-outline">
-                  learn more
-                </button>
-              </div>
-            </div>
-            <img
-              alt="image"
-              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxidXNpbmVzc3xlbnwwfHx8fDE2NDM3MzQ3MjI&amp;ixlib=rb-1.2.1&amp;w=1500"
-              className="home-image2"
-            />
-          </div>
-          <div className="home-previous-events section-container">
-            <div className="home-max-width3 max-content-container">
-              <div className="home-heading-container3">
-                <h1 className="home-text44 heading2">
-                  <span>previous events</span>
-                </h1>
-                <span className="home-text46">
-                  Take a tour of our previous conferences
-                </span>
-              </div>
-            </div>
-            <div data-type="slider" className="home-slider">
-              <Slide rootClassName="slide-root-class-name4"></Slide>
-              <Slide
-                heading="Slide #2"
-                rootClassName="slide-root-class-name1"
-              ></Slide>
-              <Slide
-                heading="Slide #3"
-                rootClassName="slide-root-class-name"
-              ></Slide>
-              <Slide
-                heading="Slide #4"
-                rootClassName="slide-root-class-name3"
-              ></Slide>
-              <Slide
-                heading="Slide #5"
-                rootClassName="slide-root-class-name2"
-              ></Slide>
-            </div>
-            <div className="home-slider-controls">
-              <div data-action="previousSlide" className="home-go-left">
-                <svg viewBox="0 0 1024 1024" className="home-icon2">
-                  <path d="M250 176l92-90 426 426-426 426-92-90 338-336z"></path>
-                </svg>
-              </div>
-              <div data-action="nextSlide" className="home-go-right">
-                <svg viewBox="0 0 1024 1024" className="home-icon4">
-                  <path d="M250 176l92-90 426 426-426 426-92-90 338-336z"></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </main>
-        <Footer rootClassName="footer-root-class-name"></Footer>
+        </footer>
+        <div className="home-container4"></div>
       </div>
       <style jsx>
         {`
@@ -393,23 +233,15 @@ const Home = (props) => {
             flex-direction: column;
             background-color: #f8f8f8;
           }
-          .home-main {
-            width: 100%;
-            height: 1008px;
-            display: flex;
-            overflow: hidden;
-            align-items: flex-start;
-            flex-direction: column;
-          }
           .home-hero {
-            height: 100%;
-            overflow: hidden;
-            position: relative;
-            padding-top: 128px;
+            padding-top: var(--dl-space-space-sixunits);
+            padding-bottom: var(--dl-space-space-sixunits);
           }
           .home-max-width {
             width: 100%;
+            height: 808px;
             z-index: 1;
+            position: relative;
             max-width: 100%;
             align-self: center;
             align-items: stretch;
@@ -417,7 +249,8 @@ const Home = (props) => {
           }
           .home-content-container {
             flex: 1;
-            width: auto;
+            width: 45%;
+            height: auto;
             display: flex;
             position: relative;
             max-width: 100%;
@@ -426,7 +259,7 @@ const Home = (props) => {
             padding-top: var(--dl-space-space-fourunits);
             padding-left: var(--dl-space-space-fiveunits);
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
           }
           .home-text {
             font-size: 24px;
@@ -448,11 +281,17 @@ const Home = (props) => {
             margin-bottom: 60px;
             text-transform: none;
           }
+          .home-container1 {
+            flex: 0 0 auto;
+            width: 100%;
+            display: flex;
+            margin-top: var(--dl-space-space-threeunits);
+            align-items: flex-start;
+          }
           .home-image {
-            top: 230px;
-            left: 0px;
+            top: 255px;
+            left: 9px;
             width: 220px;
-            bottom: 0px;
             height: 158px;
             margin: auto;
             position: absolute;
@@ -463,15 +302,15 @@ const Home = (props) => {
             flex: 0 0 auto;
             display: flex;
             position: relative;
-            align-items: flex-start;
+            align-items: stretch;
           }
           .home-textinput {
-            width: var(--dl-size-size-xxlarge);
-            height: 100%;
+            width: 290px;
+            height: 62px;
             border-width: 0px;
             border-radius: 0px;
           }
-          .home-container1 {
+          .home-container2 {
             flex: 0 0 auto;
             width: auto;
             display: flex;
@@ -505,424 +344,288 @@ const Home = (props) => {
             height: 24px;
             align-self: center;
           }
+          .home-image1 {
+            top: top;
+            flex: auto;
+            left: lef;
+            right: 0px;
+            width: 47%;
+            bottom: 0px;
+            height: 100%;
+            position: absolute;
+            min-height: 100%;
+            object-fit: cover;
+          }
           .home-blue-background {
-            top: 0px;
+            top: top;
             flex: Auto;
             right: 0px;
             width: 47%;
+            border: 2px dashed rgba(120, 120, 120, 0.4);
+            bottom: 0px;
             height: 100%;
+            display: none;
             position: absolute;
             min-height: 100%;
             background-size: cover;
             background-image: url('/playground_assets/wallpaper.svg');
             background-repeat: no-repeat;
           }
-          .home-speakers {
-            display: none;
-            padding-top: var(--dl-space-space-fiveunits);
+          .home-section {
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding-top: 0px;
             flex-direction: column;
+            padding-bottom: var(--dl-space-space-sixunits);
           }
           .home-max-width1 {
-            flex-direction: column;
-          }
-          .home-heading-container {
-            flex: 0 0 auto;
-            display: flex;
+            width: 90%;
+            height: auto;
+            max-width: 100%;
             align-items: center;
-            margin-bottom: var(--dl-space-space-fourunits);
-            flex-direction: column;
-          }
-          .home-text06 {
-            color: var(--dl-color-scheme-darkgray);
-            font-style: normal;
-            text-align: center;
-            font-weight: 500;
-          }
-          .home-text07 {
-            text-align: center;
-          }
-          .home-text09 {
-            text-align: center;
-          }
-          .home-speakers-container {
-            width: 100%;
-            display: grid;
-            grid-row-gap: var(--dl-space-space-fourunits);
-            grid-column-gap: 30px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-          }
-          .home-numbers-banner {
-            display: none;
-            padding-top: var(--dl-space-space-fiveunits);
-            flex-direction: column;
-            background-size: cover;
-            background-image: url('https://play.teleporthq.io/static/svg/placeholders/no-image.svg');
-          }
-          .home-container2 {
-            flex-direction: column;
-          }
-          .home-heading-container1 {
-            flex: 0 0 auto;
-            display: flex;
-            align-items: center;
-            margin-bottom: var(--dl-space-space-fourunits);
-            flex-direction: column;
-          }
-          .home-text10 {
-            color: var(--dl-color-scheme-white);
-            font-style: normal;
-            text-align: center;
-            font-weight: 500;
-          }
-          .home-text11 {
-            color: var(--dl-color-scheme-white);
-            text-align: center;
-          }
-          .home-numbers-container {
-            width: 100%;
-            display: grid;
-            grid-row-gap: var(--dl-space-space-fourunits);
-            grid-column-gap: 30px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-          }
-          .home-location {
-            width: 100%;
-            display: none;
-            align-items: stretch;
-            flex-direction: row;
-          }
-          .home-image1 {
-            width: 55%;
-            max-height: 950px;
-            object-fit: cover;
-          }
-          .home-content-container1 {
-            flex: 1;
-            display: flex;
-            align-items: stretch;
-            padding-top: 100px;
-            padding-right: var(--dl-space-space-threeunits);
-            flex-direction: row;
-            background-color: var(--dl-color-scheme-black);
-          }
-          .home-container3 {
-            flex: 0 0 auto;
-            width: 100%;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .home-text13 {
-            color: var(--dl-color-scheme-white);
-            font-size: 56px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 1.1;
-            margin-left: -100px;
-            padding-top: 4px;
-            padding-left: 18px;
-            margin-bottom: 6px;
-            padding-right: 11px;
-            padding-bottom: 6px;
-            background-color: var(--dl-color-scheme-lightblue);
-          }
-          .home-text14 {
-            color: var(--dl-color-scheme-white);
-            font-size: 56px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 1.1;
-          }
-          .home-container4 {
-            display: flex;
-            align-items: flex-end;
-            margin-bottom: var(--dl-space-space-twounits);
-            flex-direction: column;
-          }
-          .home-text15 {
-            color: var(--dl-color-scheme-pink);
-            font-size: 56px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 1.1;
-            margin-left: var(--dl-space-space-fiveunits);
-          }
-          .home-text17 {
-            color: var(--dl-color-scheme-pink);
-            font-size: 56px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 1.1;
-            margin-left: -36px;
-          }
-          .home-text19 {
-            color: var(--dl-color-scheme-pink);
-            font-size: 56px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 1.1;
-            margin-left: var(--dl-space-space-fiveunits);
-          }
-          .home-container5 {
-            flex: 1;
-            width: 100%;
-            display: flex;
-            max-width: 350px;
-            align-items: flex-start;
-            margin-left: 124px;
-            flex-direction: column;
-          }
-          .home-text21 {
-            color: var(--dl-color-scheme-white);
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 600;
-            margin-bottom: var(--dl-space-space-halfunit);
-          }
-          .home-text22 {
-            color: var(--dl-color-scheme-white);
-            margin-bottom: var(--dl-space-space-twounits);
-            text-transform: none;
-          }
-          .home-btns-container1 {
-            flex: 0 0 auto;
-            display: flex;
-            align-items: flex-start;
-          }
-          .home-learn-more {
-            color: var(--dl-color-scheme-white);
-            transition: 0.3s;
-            border-color: var(--dl-color-scheme-white);
-          }
-          .home-learn-more:hover {
-            border-color: var(--dl-color-scheme-pink);
-          }
-          .home-agenda {
-            display: none;
-            flex-direction: column;
-            padding-bottom: 100px;
-          }
-          .home-max-width2 {
-            flex-direction: column;
-          }
-          .home-heading-container2 {
-            flex: 0 0 auto;
-            display: flex;
-            align-items: center;
-            margin-bottom: var(--dl-space-space-fourunits);
-            flex-direction: column;
-          }
-          .home-text26 {
-            text-align: center;
-          }
-          .home-text28 {
-            color: var(--dl-color-scheme-darkgray);
-            font-style: normal;
-            text-align: center;
-            font-weight: 500;
-          }
-          .home-events-container {
-            width: 100%;
-            display: grid;
-            grid-row-gap: var(--dl-space-space-fourunits);
-            grid-column-gap: 30px;
-            grid-template-columns: 1fr 1fr;
-          }
-          .home-column {
-            width: 100%;
-            display: grid;
-            grid-gap: 30px;
-            grid-template-columns: 1fr;
-          }
-          .home-column-header {
-            width: 100%;
-            display: flex;
-            align-items: center;
-          }
-          .home-text29 {
-            color: var(--dl-color-scheme-darkgray);
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 1.1;
-            margin-right: 21px;
-          }
-          .home-line {
-            flex: 1;
-            height: 1px;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            background-color: rgba(144, 149, 167, 0.2);
-          }
-          .home-column1 {
-            width: 100%;
-            display: grid;
-            grid-gap: 30px;
-            grid-template-columns: 1fr;
-          }
-          .home-column-header1 {
-            width: 100%;
-            display: flex;
-            align-items: center;
-          }
-          .home-text31 {
-            color: var(--dl-color-scheme-darkgray);
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 1.1;
-            margin-right: 21px;
-          }
-          .home-line1 {
-            flex: 1;
-            height: 1px;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            background-color: rgba(144, 149, 167, 0.2);
-          }
-          .home-workshops {
-            flex: 1;
-            width: 100%;
-            display: none;
-            flex-direction: row;
-          }
-          .home-content-container2 {
-            flex: 1;
-            display: flex;
-            align-items: flex-end;
             flex-direction: column;
             justify-content: center;
-            background-color: rgba(144, 149, 167, 0.08);
           }
-          .home-container6 {
-            flex: 0 0 auto;
-            display: flex;
-            max-width: 366px;
-            align-items: flex-start;
-            margin-right: 107px;
-            flex-direction: column;
-          }
-          .home-text33 {
-            margin-bottom: 42px;
-          }
-          .home-text36 {
-            color: var(--dl-color-scheme-pink);
-          }
-          .home-text42 {
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 600;
-            margin-bottom: var(--dl-space-space-halfunit);
-          }
-          .home-text43 {
-            margin-bottom: var(--dl-space-space-threeunits);
-            text-transform: none;
-          }
-          .home-image2 {
-            width: 55%;
-            min-height: 880px;
-            object-fit: cover;
-            object-position: bottom;
-          }
-          .home-previous-events {
-            display: none;
-            position: relative;
-            flex-direction: column;
-            padding-bottom: 150px;
-          }
-          .home-max-width3 {
-            flex-direction: column;
-          }
-          .home-heading-container3 {
-            flex: 0 0 auto;
-            display: flex;
-            align-items: center;
-            margin-bottom: var(--dl-space-space-fourunits);
-            flex-direction: column;
-          }
-          .home-text44 {
-            text-align: center;
-          }
-          .home-text46 {
-            color: var(--dl-color-scheme-darkgray);
-            font-style: normal;
-            text-align: center;
-            font-weight: 500;
-          }
-          .home-slider {
-            flex: 0 0 auto;
+          .home-testimonial {
             width: 100%;
-            height: 420px;
             display: flex;
-            position: relative;
-            transition: 0.5s;
-            align-items: stretch;
-            flex-direction: row;
-            justify-content: center;
-          }
-          .home-slider-controls {
-            top: calc(50% + 24px);
-            width: calc(60% + 48px);
-            height: 48px;
-            display: flex;
-            position: absolute;
             align-self: center;
             justify-content: space-between;
           }
-          .home-go-left {
-            flex: 0 0 auto;
-            width: 48px;
-            cursor: pointer;
-            height: 48px;
+          .home-team {
+            width: 100%;
             display: flex;
-            z-index: 1;
-            transition: 0.3s;
+            max-width: 100%;
+            align-items: flex-start;
+            padding-top: var(--dl-space-space-threeunits);
+            padding-left: 0px;
+            padding-right: var(--dl-space-space-threeunits);
+            flex-direction: column;
+            padding-bottom: var(--dl-space-space-threeunits);
+            justify-content: center;
+          }
+          .home-text06 {
+            color: #000000;
+          }
+          .home-text09 {
+            color: #000000;
+            font-size: 0.75rem;
+            max-width: 600px;
+            margin-top: var(--dl-space-space-unit);
+            text-align: left;
+            margin-bottom: var(--dl-space-space-fourunits);
+          }
+          .home-container3 {
+            width: 100%;
+            display: grid;
+            grid-gap: var(--dl-space-space-twounits);
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+          .home-section1 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding-top: 0px;
+            flex-direction: column;
+            padding-bottom: var(--dl-space-space-sixunits);
+          }
+          .home-max-width2 {
+            width: 90%;
+            height: auto;
+            max-width: 100%;
             align-items: center;
-            border-color: rgba(144, 149, 167, 0.24);
-            border-width: 1px;
-            border-radius: var(--dl-radius-radius-round);
             flex-direction: column;
             justify-content: center;
-            background-color: var(--dl-color-scheme-white);
           }
-          .home-go-left:hover {
-            border-color: var(--dl-color-scheme-lightblue);
-            background-color: var(--dl-color-scheme-white80);
-          }
-          .home-icon2 {
-            width: 24px;
-            height: 24px;
-            transform: rotate(180deg);
-          }
-          .home-go-right {
+          .home-f-a-q {
             flex: 0 0 auto;
-            width: 48px;
-            cursor: pointer;
-            height: 48px;
+            width: 100%;
+            height: auto;
             display: flex;
-            z-index: 1;
-            transition: 0.3s;
             align-items: center;
-            border-color: rgba(144, 149, 167, 0.24);
-            border-width: 1px;
-            border-radius: var(--dl-radius-radius-round);
+            margin-bottom: var(--dl-space-space-sixunits);
+            justify-content: space-between;
+          }
+          .home-questions {
+            flex: 0 0 auto;
+            width: 50%;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
             flex-direction: column;
-            justify-content: center;
-            background-color: var(--dl-color-scheme-white);
+            justify-content: flex-start;
           }
-          .home-go-right:hover {
-            border-color: var(--dl-color-scheme-lightblue);
-            background-color: var(--dl-color-scheme-white80);
+          .home-text11 {
+            margin-bottom: var(--dl-space-space-unit);
           }
-          .home-icon4 {
+          .home-text12 {
+            margin-bottom: var(--dl-space-space-twounits);
+          }
+          .home-question {
+            box-shadow: 2px 2px 10px 0px #d4d4d4;
+            border-color: rgba(44, 39, 33, 0);
+            border-radius: 7px;
+          }
+          .home-trigger {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .home-icon02 {
             width: 24px;
             height: 24px;
+          }
+          .home-text14 {
+            align-self: flex-start;
+            margin-top: var(--dl-space-space-halfunit);
+          }
+          .home-question1 {
+            box-shadow: 2px 2px 10px 0px #d4d4d4;
+            border-color: rgba(44, 39, 33, 0);
+            border-radius: 7px;
+          }
+          .home-trigger1 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .home-icon04 {
+            width: 24px;
+            height: 24px;
+          }
+          .home-text16 {
+            align-self: flex-start;
+            margin-top: var(--dl-space-space-halfunit);
+          }
+          .home-question2 {
+            box-shadow: 2px 2px 10px 0px #d4d4d4;
+            border-color: rgba(44, 39, 33, 0);
+            border-radius: 7px;
+          }
+          .home-trigger2 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .home-icon06 {
+            width: 24px;
+            height: 24px;
+          }
+          .home-text18 {
+            align-self: flex-start;
+            margin-top: var(--dl-space-space-halfunit);
+          }
+          .home-question3 {
+            box-shadow: 2px 2px 10px 0px #d4d4d4;
+            border-color: rgba(44, 39, 33, 0);
+            border-radius: 7px;
+          }
+          .home-trigger3 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .home-icon08 {
+            width: 24px;
+            height: 24px;
+          }
+          .home-text20 {
+            align-self: flex-start;
+            margin-top: var(--dl-space-space-halfunit);
+          }
+          .home-question4 {
+            box-shadow: 2px 2px 10px 0px #d4d4d4;
+            border-color: rgba(44, 39, 33, 0);
+            border-radius: 7px;
+          }
+          .home-trigger4 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .home-icon10 {
+            width: 24px;
+            height: 24px;
+          }
+          .home-text22 {
+            align-self: flex-start;
+            margin-top: var(--dl-space-space-halfunit);
+          }
+          .home-question5 {
+            box-shadow: 2px 2px 10px 0px #d4d4d4;
+            border-color: rgba(44, 39, 33, 0);
+            border-radius: 7px;
+          }
+          .home-trigger5 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .home-icon12 {
+            width: 24px;
+            height: 24px;
+          }
+          .home-text24 {
+            align-self: flex-start;
+            margin-top: var(--dl-space-space-halfunit);
+          }
+          .home-image2 {
+            width: 50%;
+            object-fit: cover;
+            margin-right: -400px;
+          }
+          .home-footer {
+            width: 100%;
+            display: flex;
+            max-width: var(--dl-size-size-maxwidth);
+            align-items: center;
+            padding-top: var(--dl-space-space-unit);
+            padding-left: var(--dl-space-space-threeunits);
+            padding-right: var(--dl-space-space-threeunits);
+            padding-bottom: var(--dl-space-space-unit);
+            justify-content: space-between;
+          }
+          .home-image3 {
+            width: 147px;
+            height: 79px;
+            object-fit: cover;
+          }
+          .home-icon-group {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          .home-icon14 {
+            width: var(--dl-size-size-xsmall);
+            height: var(--dl-size-size-xsmall);
+            margin-right: var(--dl-space-space-twounits);
+          }
+          .home-icon16 {
+            width: 24px;
+            height: 24px;
+          }
+          .home-container4 {
+            flex: 0 0 auto;
+            width: 100%;
+            border: 2px dashed rgba(120, 120, 120, 0.4);
+            height: 100px;
+            display: none;
+            align-items: flex-start;
           }
           @media (max-width: 1200px) {
             .home-blue-background {
               background-size: cover;
+            }
+            .home-trigger {
+              flex-direction: row;
             }
           }
           @media (max-width: 1140px) {
@@ -950,42 +653,25 @@ const Home = (props) => {
               min-height: 100%;
               background-size: cover;
             }
-            .home-speakers-container {
-              grid-template-columns: 1fr 1fr 1fr;
-            }
-            .home-numbers-container {
-              grid-template-columns: 1fr 1fr 1fr;
-            }
-            .home-location {
+            .home-max-width1 {
               flex-direction: column;
             }
-            .home-image1 {
-              width: 100%;
+            .home-max-width2 {
+              flex-direction: column;
             }
-            .home-content-container1 {
-              padding-top: 0px;
-              padding-left: var(--dl-space-space-threeunits);
+            .home-questions {
+              width: 80%;
+            }
+          }
+          @media (max-width: 991px) {
+            .home-text06 {
+              text-align: center;
+            }
+            .home-text09 {
+              text-align: center;
             }
             .home-container3 {
-              margin-top: -100px;
-              align-items: center;
-            }
-            .home-container5 {
-              max-width: 100%;
-              margin-left: 0px;
-            }
-            .home-events-container {
               grid-template-columns: 1fr;
-            }
-            .home-container6 {
-              margin-right: var(--dl-space-space-unit);
-            }
-            .home-image2 {
-              width: 50%;
-              object-position: left;
-            }
-            .home-slider-controls {
-              width: calc(75% + 48px);
             }
           }
           @media (max-width: 767px) {
@@ -996,47 +682,18 @@ const Home = (props) => {
               height: var(--dl-size-size-large);
               margin: auto;
             }
-            .home-speakers-container {
-              grid-template-columns: 1fr 1fr;
-            }
-            .home-numbers-container {
-              grid-template-columns: 1fr 1fr;
-            }
-            .home-image1 {
-              max-height: 100%;
-            }
-            .home-content-container1 {
+            .home-team {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
-            .home-text13 {
-              margin-left: -24px;
+            .home-footer {
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
             }
-            .home-btns-container1 {
-              width: 100%;
-              align-items: stretch;
-              flex-direction: column;
-            }
-            .home-workshops {
-              flex-direction: column-reverse;
-              padding-bottom: var(--dl-space-space-twounits);
-            }
-            .home-container6 {
-              max-width: 100%;
-              padding-top: var(--dl-space-space-twounits);
-              margin-right: 0px;
-              padding-left: var(--dl-space-space-oneandhalfunits);
-              padding-right: var(--dl-space-space-oneandhalfunits);
-              padding-bottom: var(--dl-space-space-twounits);
-            }
-            .home-image2 {
-              width: 100%;
-            }
-            .home-previous-events {
-              padding-bottom: var(--dl-space-space-sixunits);
-            }
-            .home-slider-controls {
-              width: calc(80% + 48px);
+            .home-text25 {
+              text-align: center;
+              margin-left: var(--dl-space-space-unit);
+              margin-right: var(--dl-space-space-unit);
             }
           }
           @media (max-width: 479px) {
@@ -1068,8 +725,29 @@ const Home = (props) => {
               width: 100%;
               height: 100%;
             }
-            .home-speakers-container {
-              grid-template-columns: 1fr;
+            .home-team {
+              padding-top: var(--dl-space-space-twounits);
+              padding-left: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
+              padding-bottom: var(--dl-space-space-twounits);
+            }
+            .home-container3 {
+              display: list-item;
+            }
+            .home-questions {
+              width: 100%;
+            }
+            .home-footer {
+              padding: var(--dl-space-space-unit);
+              flex-direction: column;
+            }
+            .home-image3 {
+              margin-bottom: var(--dl-space-space-unit);
+            }
+            .home-text25 {
+              margin-left: 0px;
+              margin-right: 0px;
+              margin-bottom: var(--dl-space-space-unit);
             }
           }
         `}
